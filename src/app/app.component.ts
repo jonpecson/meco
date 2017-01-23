@@ -4,7 +4,15 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
-
+import { AppointmentPage } from '../pages/appointment/appointment';
+import { EventPage } from '../pages/event/event';
+import { NewsPage } from '../pages/news/news';
+import { ProfilePage } from '../pages/profile/profile';
+import { AboutPage } from '../pages/about/about';
+import { FeedbackPage } from '../pages/feedback/feedback';
+import { SettingsPage } from '../pages/settings/settings';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +20,7 @@ import { Page2 } from '../pages/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
@@ -21,13 +29,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Appointments', component: Page1, icon: 'calendar'},
-      { title: 'Events', component: Page2, icon: 'notifications'},
-      { title: 'News', component: Page2, icon: 'list-box'},
-      { title: 'Profile Settings', component: Page2, icon: 'person'},
-      { title: 'About', component: Page2, icon: 'information-circle'},
-      { title: 'Feedback', component: Page2, icon: 'bug'},
-      { title: 'Settings', component: Page2, icon: 'settings'},
+      { title: 'Appointments', component: AppointmentPage, icon: 'calendar'},
+      { title: 'Events', component: EventPage, icon: 'notifications'},
+      { title: 'News', component: NewsPage, icon: 'list-box'},
+      { title: 'Profile', component: ProfilePage, icon: 'person'},
+      { title: 'About', component: AboutPage, icon: 'information-circle'},
+      { title: 'Feedback', component: FeedbackPage, icon: 'bug'},
+      { title: 'Settings', component: SettingsPage, icon: 'settings'},
 
     ];
 
