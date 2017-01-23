@@ -14,15 +14,21 @@ export class MyApp {
 
   rootPage: any = Page1;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Appointments', component: Page1, icon: 'calendar'},
+      { title: 'Events', component: Page2, icon: 'notifications'},
+      { title: 'News', component: Page2, icon: 'list-box'},
+      { title: 'Profile Settings', component: Page2, icon: 'person'},
+      { title: 'About', component: Page2, icon: 'information-circle'},
+      { title: 'Feedback', component: Page2, icon: 'bug'},
+      { title: 'Settings', component: Page2, icon: 'settings'},
+
     ];
 
   }
