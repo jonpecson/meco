@@ -20,7 +20,7 @@
         <div class="col">
           <br>
           <!--<button ion-button round color="danger">Sign In</button>-->
-          <img src="/assets/img/Logo.png" class="rounded" height="120px">
+          <img src="../assets/img/logo.png" class="rounded" height="120px">
         </div>
       </div>
 
@@ -46,9 +46,9 @@
       
     <ion-label text-center>
       <p text-center>Don't have an account yet?</p>
-      <p><a href="#" >Create an account</a></p>
+      <a [navPush]="signupPage">Create an account</a>
       <br/>
-      <p><a href="#">Skip</a></p>
+      <p><a [root]="appointmentPage">Skip</a></p>
     </ion-label>
     
     

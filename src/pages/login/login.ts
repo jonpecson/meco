@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { SignupPage } from '../signup/signup';
+import { AppointmentPage } from '../appointment/appointment'
 /*
   Generated class for the Login page.
 
@@ -12,11 +13,20 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'login.html'
 })
 export class LoginPage {
+  signupPage = SignupPage;
+  appointmentPage = AppointmentPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
+
+  login() {
+    this.navCtrl.push(AppointmentPage);
+        // first we find the index of the current view controller:
+    this.navCtrl.popAll();
+  }
+
 
 }

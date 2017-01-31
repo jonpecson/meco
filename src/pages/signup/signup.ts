@@ -12,6 +12,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html'
 })
 export class SignupPage {
+  title = "Signup";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

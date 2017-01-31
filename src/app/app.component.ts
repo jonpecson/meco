@@ -12,7 +12,7 @@ import { AboutPage } from '../pages/about/about';
 import { FeedbackPage } from '../pages/feedback/feedback';
 import { SettingsPage } from '../pages/settings/settings';
 import { LoginPage } from '../pages/login/login';
-import { SignupPage } from '../pages/signup/signup';
+
 
 @Component({
   templateUrl: 'app.html'
